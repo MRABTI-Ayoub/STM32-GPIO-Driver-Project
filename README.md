@@ -1,2 +1,7 @@
 # STM32-GPIO-Driver-Project
 Implementation of a custom GPIO driver for STM32F4 microcontrollers using low-level register programming.
+This project provides a comprehensive custom GPIO driver for STM32F4 microcontrollers, implemented entirely at the register level. It gives developers complete control over the configuration and operation of GPIO pins, including setting pins as input, output, or alternate function, configuring pull-up and pull-down resistors, defining output types, and controlling pin speeds. The driver also allows reading the state of input pins, writing output values, and toggling pins with precision, making it highly suitable for embedded applications that require deterministic and low-level hardware control.
+
+Designed for bare-metal development, this driver avoids dependencies on STM32 HAL or LL libraries, providing a lightweight and educational foundation for understanding the internal workings of GPIO peripherals on STM32 microcontrollers. It can be used in projects such as LED control, button reading, communication interface configuration, or any scenario where precise manipulation of pins is necessary.
+
+In addition to basic GPIO operations, the driver supports alternate functions, allowing pins to be configured for peripherals such as UART, SPI, I2C, and timers. By providing a clear and modular API, this project is intended both as a practical tool for embedded development and as a learning resource for engineers who want to deepen their knowledge of STM32 microcontroller architecture and low-level programming techniques.
